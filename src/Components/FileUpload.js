@@ -78,5 +78,4 @@ const FileUpload = () => {
     </motion.div>
   );
 };
-
 export default FileUpload;
