@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-  "node": "14.x"
+  "node": "22.x"
 },
   "dependencies": {
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.0",
     "@atlaskit/drag-and-drop": "^0.16.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
