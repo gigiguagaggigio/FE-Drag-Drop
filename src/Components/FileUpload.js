@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDropzone } from "react-dropzone";
-import { motion } from "framer-motion";  // Importa framer-motion
+import { motion } from "framer-motion"; // Importa framer-motion
+import './FileUpload.css'; // Importa il file CSS
+
 
 const FileUpload = () => {
   const [loading, setLoading] = useState(false);
@@ -50,19 +52,7 @@ const FileUpload = () => {
   return (
     <motion.div
       {...getRootProps()}
-      style={{
-        border: "2px dashed #4CAF50",
-        padding: "20px",
-        textAlign: "center",
-        cursor: "pointer",
-        borderRadius: "10px",
-        backgroundColor: "#f9f9f9",
-        transition: "all 0.3s ease",
-        boxShadow: isHovered
-          ? "0 0 15px rgba(0, 0, 0, 0.3)"  // Ombra quando il file è sopra
-          : "none",
-        transform: isHovered ? "scale(1.05)" : "scale(1)",  // Ingrandisci quando è sopra
-      }}
+      className="file-upload"  // Aggiungi la classe CSS
       animate={{
         scale: loading ? 0.95 : 1,  // Effetto di riduzione durante il caricamento
       }}
@@ -78,4 +68,5 @@ const FileUpload = () => {
     </motion.div>
   );
 };
+
 export default FileUpload;

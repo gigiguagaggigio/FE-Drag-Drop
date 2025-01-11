@@ -1,0 +1,21 @@
+/* FileUpload.css */
+.file-upload {
+    border: 2px dashed #4CAF50;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    color: rgb(8, 8, 8); /* Colore del testo nero */
+  }
+  
+  .file-upload:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
